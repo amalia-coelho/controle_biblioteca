@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.center{
+	display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.split{
+	max-width: 900px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.menu{
+	width: 20vh;
+	height: 100%;
+	
+	align-self: left;
+}
+
+.menu .options{
+	display: flex;
+	flex-direction: column;
+	padding: 10% 12%;
+}
+
+.options a{
+	background-color: #002366;
+	color: white;
+	width: 130px;
+	height: 26px;
+	text-decoration: none;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 0.2em;
+}
+
+.content{
+	margin-top: 15px;
+	width: 70vh;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: space-between;
+	margin-left: 40px;
+}
+
+.content .form{
+	max-width: 70vh;
+	display: flex;
+	justify-content: flex-end;	
+}
+
+.input{
+	margin-bottom: 25px;
+}
+
+.input .input_medio{
+	width: 200px;
+	height: 25px;
+	padding-left: 7px;
+}
+
+.button button{
+	margin-left: 25px;
+	width: 150px;
+	height: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+th{
+	background-color: #4e5796;
+}
+
+td, th {
+  border: 3px solid #134157;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #7083b3;
+}
