@@ -8,7 +8,9 @@
 
 	<!-- Links -->
 	<link rel="stylesheet" href="css/style_cadastro.css">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,16 +26,36 @@
 			</li>
 		</nav>
 	</header>
-	<main>
-		<div class="head-main">
-			<!-- texto "cadastro de autor" e botao do modal -->
-		</div>
-		<section>
-			<!-- formulário -->
-		</section>
-		<aside>
-			<!-- Em páginas de cadastro, aqui será exibido os registros do banco -->
-		</aside>
-	</main>
+	<div class="center">
+		<main>
+			<div class="head-main">
+				<h2>Cadastro de Autor</h2>
+			</div>
+			<div class="split-form-exibir">
+				<section>
+					<div class="input">
+						<label>Nome do Autor</label>
+						<input type="text" id="nm_autor">
+					</div>
+					<div class="button-enviar">
+						<button type="button" id="enviar">Cadastrar</button>
+					</div>
+				</section>
+				<aside>
+					<table>
+						<thead>
+							<tr>
+								<th>Id</th>
+								<th>Nome do Autor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- local de exibição das informações cadastradas no banco -->
+						</tbody>
+					</table>
+				</aside>
+			</div>
+		</main>
+	</div><!-- center -->
 </body>
 </html>
