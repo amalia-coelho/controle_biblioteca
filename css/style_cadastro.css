@@ -108,6 +108,11 @@ section .input label {
     border-width: 0.5px;
     border-color: #c9c4c4;
     border-radius: 6px;
+
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+
 }
 
 .input input:focus-visible {
@@ -115,7 +120,7 @@ section .input label {
     border-style: solid;
 }
 
-.button-enviar button {
+.button-enviar #enviar {
     margin-top: 80px;
     height: 45px;
     width: 100%;
@@ -127,6 +132,7 @@ section .input label {
     font-size: 17pt;
     font-weight: 500;
     color: #DFDFDF;
+    cursor: pointer;
 }
 
 .split-form-exibir aside {
@@ -134,3 +140,38 @@ section .input label {
     width: 49%;
 }
 
+aside .table-content {
+    border-collapse: collapse;
+    margin: 0 50px;
+    font-size: 1.2em;
+    min-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.15);
+
+}
+
+.table-content thead tr {
+    background-color: rgba(24, 116, 177, 0.829);
+    color: #f5f1f1;
+    text-align: left;
+}
+
+.table-content th,
+.table-content td {
+    padding: 10px 15px;
+}
+
+.table-content td {
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.table-content tbody tr:hover {
+    background-color: #c9c4c4;
+    cursor: pointer;
+}
+
+.table-content tbody tr:last-of-type {
+    border-bottom: solid 1px #1874b1;
+}

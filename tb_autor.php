@@ -12,6 +12,28 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+	<!-- links js -->
+	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript">
+		$("#enviar").click(function(){
+				var nm_autor = $("#nm_autor").val();
+				$.ajax({
+				url: "php/script_autor.php",
+				type: "POST",
+				data: "nm_autor="+nm_autor,
+				dataType: "html"
+
+				}).done(function(resposta) {
+	    			$("tbody").html(resposta);
+	    			$("#nm_autor").val(" ");
+					
+				}).fail(function(jqXHR, textStatus ) {
+					console.log("Request failed: " + textStatus);
+				});
+			});
+	</script>
+	</script>
+
 </head>
 <body>
 	<header>
@@ -38,11 +60,11 @@
 						<input type="text" id="nm_autor">
 					</div>
 					<div class="button-enviar">
-						<button type="button" id="enviar">Cadastrar</button>
+						<button type="button" id="enviar">Enviar</button>
 					</div>
 				</section>
 				<aside>
-					<table>
+					<table class="table-content">
 						<thead>
 							<tr>
 								<th>Id</th>
@@ -50,7 +72,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<!-- local de exibição das informações cadastradas no banco -->
+							
 						</tbody>
 					</table>
 				</aside>
