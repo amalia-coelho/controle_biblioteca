@@ -5,7 +5,7 @@ try {
 
     $stmt = $conn->prepare('INSERT INTO tb_autor (nm_autor) VALUES (:nome)');
     $stmt->execute(array(
-        ':nome' => 'Lucélia'
+        ':nome' => $_POST['nm_autor'];
     ));
 
     //SELECT
